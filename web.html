@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+        h1{
+            text-align: center;
+            color: black;
+            background-color:darkgrey;
+            border-radius: 8px;
+            width: 100%;
+            margin:  0 auto;
+            max-width: 400px;
+            padding: 10px;
+            
+        }
+        form{
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            background-color: gray;
+            max-width: 400px;
+            border-radius: 8px;
+            width: 100%;
+            margin: 20px 0 auto;
+            box-shadow: rgb(199, 198, 192) 10px 10px 10px ;
+
+        }
+
+        label{
+            background-color: solid black;
+            font-family: arial;
+            font-weight: bold;
+            font-size: 20px;
+
+        }
+        input[type="text"],
+        input[type="password"] {
+            padding: 10px;
+            border: solid gray;
+            border-radius: 4px;
+        }
+        input[type="submit"]{
+            background-color:rgb(146, 235, 13);
+            padding: 10px;
+            font-family: arial;
+            font-size: 18px;
+            
+            color: white;
+            cursor: pointer;
+            border: none;
+            border-radius: 8px;
+            border-color: gray;
+
+        }
+        input[type="submit"]:hover{
+            background-color: #adff2f;
+            color: black;
+            transition: 1s;
+            transform: scale(1.1 );
+        }
+    </style>
+
+<head>
+    <title>index.html</title>
+</head>
+<body>
+    <div class="login-container">
+    <h1>st pauls sec sch</h1>
+    <form action="submit" method="post">
+
+    <label for="username">username</label>
+    <input type="text" id="username" name="username" required><br><br>
+    <label for="password">password</label>
+    <input type="password" id="password" name="password" placeholder="suggest a strong password"minlength="8"maxlength="15" required><br><br>
+    
+    <input type="submit" value="submit">
+    <p>if you do not get redirected<a href="https://studocu.com">click here</a></p>
+    </form>
+    
+
+    </div>
+</body>
+</html>
